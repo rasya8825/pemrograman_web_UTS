@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #f8f9f9;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+}
+
+.navbar-link {
+  color: #555;
+  margin-right: 20px;
+  font-size: 60px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0dcaf0;
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%280, 0, 0, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-collapse {
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s;
+  font-size: 20px;
+  font-weight: 300px;
+}
+
+.hero-section:hover {
+  background-color: #e9ecef;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 30px;
+  max-width: 600px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  margin-bottom: 1.5rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
+/* Features Section */
+#fitur {
+  font-size: 20px;
+  padding: 2rem 0;
+  margin-bottom: 60px;
+}
+
+#fitur h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#fitur p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.featur-list {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+  font-weight: 200;
+}
+
+.featur-list li {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.featur-list li:hover {
+  transform: scale(1.05);
+  color: #0dcaf0;
+}
+
+/* card Section */
+.card {
+  padding: 2rem 0;
+}
+
+.card-section .card .card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .section-title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.swiper {
+  display: flex;
+  overflow: auto;
+}
+
+.swiper-slide {
+  width: 300px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .card .swiper {
+    flex-direction: column;
+  }
+
+  .swiper-slide {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsive video */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+#gambar img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-center h4 {
+  font-size: 20px;
+  font-weight: 500px;
+  margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+footer:hover {
+  background-color: #f8f9f9;
+}
+
+.links {
+  margin: 15px 0;
+}
+
+.links a {
+  color: black;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #0dcaf0;
+}
+
+.credit {
+  margin-top: 10px;
+}
+
+.credit a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .socials a,
+  .links a {
+    margin: 0 5px;
+    font-size: 20px;
+  }
+}
